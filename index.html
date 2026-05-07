@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>DearSelf — A Private AI Journal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="DearSelf is an on-device AI journal that keeps your thoughts private. No cloud, no network, just you." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-logo">DearSelf</a>
+  <div class="nav-links">
+    <a href="/about.html">About</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/support.html">Support</a>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Write to yourself.<br /><em>Gently.</em></h1>
+      <p class="hero-sub">
+        DearSelf is an on-device AI journal agent that listens, reflects,
+        and never leaves your phone. No cloud. No network. Just you and
+        your words.
+      </p>
+      <div class="hero-cta">
+        <span class="badge">Coming Soon to the App Store</span>
+      </div>
+    </div>
+
+    <div class="hero-device">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <!-- Simulated app screen -->
+          <div class="screen-bar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#171a20" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 4 H 17 A 2 2 0 0 1 19 6 V 20 H 7 A 2 2 0 0 1 5 18 Z" />
+              <path d="M5 18 A 2 2 0 0 1 7 16 H 19" />
+            </svg>
+            <span class="screen-title">DearSelf</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#171a20" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="6.5" /><line x1="16" y1="16" x2="20.5" y2="20.5" />
+            </svg>
+          </div>
+          <div class="screen-heading">
+            <span class="screen-heading-main">Entries</span>
+            <span class="screen-heading-meta">42 this month</span>
+          </div>
+          <div class="screen-entries">
+            <div class="screen-entry">
+              <div class="entry-date">
+                <span class="entry-day">21</span>
+                <span class="entry-month">Today</span>
+              </div>
+              <div class="entry-body">
+                <div class="entry-mood" style="color: #6a9b92;">Peaceful · 6:42 pm</div>
+                <div class="entry-title">The walk home was longer today</div>
+                <div class="entry-preview">Took the park route on a whim. The crabapples are in bloom along the fence…</div>
+              </div>
+              <div class="entry-visual mood-peaceful">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#6a9b92" stroke="none">
+                  <path d="M 12 19.5 C 12 14.5, 13.6 11, 18.8 9.2 C 19.2 13.4, 17 17.8, 12 19.5 Z" opacity="0.92" />
+                  <path d="M 12 19.5 C 12 13, 9.6 8, 3.6 5.6 C 3.6 12.6, 6.4 17.6, 12 19.5 Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="screen-entry">
+              <div class="entry-date">
+                <span class="entry-day-cont"></span>
+              </div>
+              <div class="entry-body">
+                <div class="entry-mood" style="color: #7b8bb0;">Anxious · 2:14 am</div>
+                <div class="entry-preview">Couldn't sleep again. Kept running the meeting back in my head…</div>
+              </div>
+              <div class="entry-visual mood-anxious">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7b8bb0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M 3 20 C 6 18, 7 15, 7 12 C 7 9, 9.5 7, 12 7 C 14.5 7, 16 9, 14 11" />
+                  <path d="M 3 7 C 6 9, 8 11, 10 13 C 12 15, 14 16, 17 12 C 19 9, 20 7, 21 5"/>
+                  <path d="M 14 11 C 15.5 12.5, 18 13.5, 21 15"/>
+                </svg>
+              </div>
+            </div>
+            <div class="screen-entry">
+              <div class="entry-date">
+                <span class="entry-day">20</span>
+                <span class="entry-month">Yest</span>
+              </div>
+              <div class="entry-body">
+                <div class="entry-mood" style="color: #6b94c9;">Happy · 8:03 pm</div>
+                <div class="entry-title">Noodles with Mara</div>
+                <div class="entry-preview">We laughed so hard the broth went everywhere…</div>
+              </div>
+              <div class="entry-visual entry-photo">
+                <img src="assets/tree.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mood icons strip -->
+  <section class="moods-strip">
+    <div class="moods-inner">
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(107,148,201,0.08); --ring-border: rgba(107,148,201,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#6b94c9" stroke="none">
+            <circle cx="12" cy="12" r="4.2" />
+            <path d="M12 2.4 L12.9 5.4 L11.1 5.4Z" /><path d="M18.1 4.7 L16.4 7.3 L15.2 6.1Z" />
+            <path d="M21.6 12 L18.6 12.9 L18.6 11.1Z" /><path d="M19.3 18.1 L16.7 16.4 L17.9 15.2Z" />
+            <path d="M12 21.6 L11.1 18.6 L12.9 18.6Z" /><path d="M5.9 19.3 L7.6 16.7 L8.8 17.9Z" />
+            <path d="M2.4 12 L5.4 11.1 L5.4 12.9Z" /><path d="M4.7 5.9 L7.3 7.6 L6.1 8.8Z" />
+          </svg>
+        </div>
+        <span>Happy</span>
+      </div>
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(142,125,184,0.08); --ring-border: rgba(142,125,184,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8e7db8" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 3 L14.1 10.2 L21 11.5 L14.1 12.8 L13 20 L11.9 12.8 L5 11.5 L11.9 10.2 Z" />
+            <path d="M5.5 5 L6 7 L8 7.5 L6 8 L5.5 10 L5 8 L3 7.5 L5 7 Z" />
+          </svg>
+        </div>
+        <span>Excited</span>
+      </div>
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(106,155,146,0.08); --ring-border: rgba(106,155,146,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#6a9b92" stroke="none">
+            <path d="M 12 19.5 C 12 14.5, 13.6 11, 18.8 9.2 C 19.2 13.4, 17 17.8, 12 19.5 Z" opacity="0.92" />
+            <path d="M 12 19.5 C 12 13, 9.6 8, 3.6 5.6 C 3.6 12.6, 6.4 17.6, 12 19.5 Z" />
+          </svg>
+        </div>
+        <span>Peaceful</span>
+      </div>
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(136,146,160,0.08); --ring-border: rgba(136,146,160,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8892a0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 7 4 L 17 4 L 16 20 C 16 20.8, 15.4 21.2, 14.6 21.2 L 9.4 21.2 C 8.6 21.2, 8 20.8, 8 20 Z" />
+            <path d="M 8.4 12 L 15.6 12 L 15 20 C 15 20.6, 14.6 20.8, 14 20.8 L 10 20.8 C 9.4 20.8, 9 20.6, 9 20 Z" fill="#8892a0" stroke="none" opacity="0.85" />
+          </svg>
+        </div>
+        <span>Neutral</span>
+      </div>
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(90,119,168,0.08); --ring-border: rgba(90,119,168,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5a77a8" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3.5 C 12 3.5, 5.5 11, 5.5 15 C 5.5 18.6, 8.4 21, 12 21 C 15.6 21, 18.5 18.6, 18.5 15 C 18.5 11, 12 3.5, 12 3.5 Z" />
+            <path d="M9 15.5 C 9 17.2, 10.2 18.2, 11.4 18.4" opacity="0.55" />
+          </svg>
+        </div>
+        <span>Sad</span>
+      </div>
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(160,106,134,0.08); --ring-border: rgba(160,106,134,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a06a86" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3 L 13.6 8.6 L 19.5 6.5 L 16.2 11.4 L 21 13.5 L 15.3 14.8 L 17 20.5 L 12.6 16.6 L 9.5 21 L 8.8 15.2 L 3 15.8 L 7.2 12 L 3.3 8.5 L 9 8.2 L 7.5 3.2 L 12 6 Z" />
+          </svg>
+        </div>
+        <span>Angry</span>
+      </div>
+      <div class="mood-item">
+        <div class="mood-ring" style="--ring-bg: rgba(79,133,145,0.08); --ring-border: rgba(79,133,145,0.2);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#4f8591" stroke="none">
+            <path d="M15.4 3.6 A 9 9 0 1 0 20.4 14.2 A 7 7 0 0 1 15.4 3.6 Z" />
+            <circle cx="6.2" cy="6.4" r="1.05" />
+          </svg>
+        </div>
+        <span>Chill</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="section-header">
+      <h2>Your journal, your way</h2>
+      <p>Every detail designed to feel like opening a notebook — quiet, personal, and entirely yours.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2" />
+            <path d="M8 6h8M8 10h8M8 14h5" />
+          </svg>
+        </div>
+        <h3>AI that listens</h3>
+        <p>A gentle, on-device journal agent that helps you reflect — asks the right questions, notices patterns, and never judges. All processing happens on your phone.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="10" rx="2" />
+            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+          </svg>
+        </div>
+        <h3>Completely private</h3>
+        <p>No servers. No accounts. No analytics. Your entries live on your device — or in your personal iCloud if you choose. We never see your data.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <h3>Mood tracking</h3>
+        <p>Nine hand-drawn mood icons — from happy to anxious to chill — let you mark how you feel in a single tap. See patterns over days, weeks, and months.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="5" width="16" height="15" rx="2" />
+            <line x1="4" y1="9" x2="20" y2="9" />
+            <line x1="9" y1="3" x2="9" y2="6" />
+            <line x1="15" y1="3" x2="15" y2="6" />
+          </svg>
+        </div>
+        <h3>Calendar &amp; entries</h3>
+        <p>Switch between a list of entries and a quiet calendar grid. Photos fill the day cells; mood icons float behind dates. Events and reminders sit alongside your writing.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <h3>Works offline</h3>
+        <p>No Wi-Fi required. The AI runs entirely on-device — write on a plane, in the woods, or anywhere your thoughts find you. Your journal is always ready.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z" />
+          </svg>
+        </div>
+        <h3>Designed with care</h3>
+        <p>Every pixel considered. Spectral serif for your words, hairline icons, generous whitespace. Four themes — default, notebook, terminal, glass — each crafted to match how you feel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy callout -->
+  <section class="privacy-callout">
+    <div class="callout-inner">
+      <div class="callout-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4a6785" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+      </div>
+      <h2>Privacy is the architecture,<br />not a setting.</h2>
+      <p>
+        DearSelf has no server. The AI model runs on Apple's Neural Engine,
+        right on your device. Your journal entries never travel over a network —
+        they stay in local storage or your personal iCloud, at your choice.
+        There is nothing to breach because there is nothing to reach.
+      </p>
+      <a href="/privacy.html" class="text-link">Read the full privacy policy &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Coming soon -->
+  <section class="coming-soon">
+    <div class="mascot">
+      <div class="mascot-disc">
+        <svg width="56" height="120" viewBox="0 0 56 120" style="overflow: visible;">
+          <defs>
+            <linearGradient id="pen-body" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#fbf6ec" />
+              <stop offset="55%" stop-color="#f4ecde" />
+              <stop offset="100%" stop-color="#e3d6bf" />
+            </linearGradient>
+            <linearGradient id="pen-cap" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#5b6b85" />
+              <stop offset="60%" stop-color="#445268" />
+              <stop offset="100%" stop-color="#2f3a4d" />
+            </linearGradient>
+            <linearGradient id="pen-nib" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7a7167" />
+              <stop offset="100%" stop-color="#3c372f" />
+            </linearGradient>
+          </defs>
+          <!-- Body -->
+          <path d="M 18 22 L 38 22 L 38 84 L 28 84 L 18 84 Z" fill="url(#pen-body)" />
+          <!-- Cap -->
+          <path d="M 16 8 Q 16 4, 20 4 L 36 4 Q 40 4, 40 8 L 40 24 L 16 24 Z" fill="url(#pen-cap)" />
+          <!-- Cap clip -->
+          <path d="M 36 6 Q 38 6, 38 9 L 38 19 Q 38 22, 36 22 L 36 19 L 36 9 Z" fill="#7d8aa3" opacity="0.85" />
+          <!-- Cap rim band -->
+          <rect x="16" y="22" width="24" height="2" fill="#1f2734" opacity="0.7" />
+          <!-- Subtle vertical body shadow -->
+          <rect x="34" y="24" width="4" height="60" fill="#000" opacity="0.06" />
+          <!-- Nib taper -->
+          <path d="M 18 84 L 38 84 L 32 100 L 24 100 Z" fill="url(#pen-nib)" />
+          <!-- Nib slit -->
+          <line x1="28" y1="84" x2="28" y2="98" stroke="#1a1610" stroke-width="0.6" opacity="0.6" />
+          <!-- Face -->
+          <circle cx="23.14" cy="49.42" r="2.16" fill="#1a1814" />
+          <circle cx="32.86" cy="49.42" r="2.16" fill="#1a1814" />
+          <path d="M 24.49 52.16 Q 28 54.32, 31.51 52.16" stroke="#1a1814" stroke-width="1.62" stroke-linecap="round" fill="none" />
+          <!-- Cheeks -->
+          <circle cx="22" cy="56" r="2.8" fill="#e8a08a" opacity="0.35" />
+          <circle cx="34" cy="56" r="2.8" fill="#e8a08a" opacity="0.35" />
+        </svg>
+      </div>
+    </div>
+    <h2>Coming soon</h2>
+    <p>DearSelf is being crafted with care. Sign up to know when it's ready.</p>
+    <a href="/support.html" class="text-link">Get in touch &rarr;</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">DearSelf</div>
+    <div class="footer-links">
+      <a href="/about.html">About</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/support.html">Support</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 Rainletters LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
